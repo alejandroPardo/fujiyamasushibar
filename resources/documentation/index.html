@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Iris Template Documentation</title>
+	<link rel="stylesheet" href="files/style.css" type="text/css" media="screen" />
+</head>
+<body>
+<a name="top"></a>
+<div id="wrapper">
+	<!-- start header -->
+    <div id="header">
+        	<div class="row">
+            	<div class="inner">
+        			<center><h2>Iris Theme <i>(Html5 & CSS3)</i> Documentation<br>
+       			  (shared on my.apploadz.ru)</h2>
+        			</center>
+                </div>
+               </div>
+            <div class="line_1"></div>
+            <div class="row">
+                <div class="meta">
+                    <b>Created: 26/04/2012</b><br>
+                    <b>By: Spab Rice</b><br>
+                    <b>Email: <a href="mailto:spabrice@gmail.com">spabrice@gmail.com</a></b><br>
+                </div>
+                <div class="thanks">
+                    Thank you for purchasing this Theme.  Feel free to contact me if you have any questions that are beyond the scope of this help file.
+                    Please use the theme name in the subject.
+                </div>
+            </div>
+            <div class="line_1"></div>
+            <div class="row">
+            	<div class="inner">
+            	<h4>Table of Contents</h4>
+                <ol>
+                	<li><a href="#html">Html</a></li>
+                	<li><a href="#css">CSS</a></li>
+                	<li><a href="#javascript">Javascript (jquery)</a></li>
+                	<li><a href="#php">PHP (contact form)</a></li>
+                	<li><a href="#sources">Sources and Credits</a></li>
+                </ol><br><br>
+                
+                <span class="red"><b>Note:</b></span> Loading items per Ajax (index.html) <b>does not</b> work <b>locally</b> with <b>Google Chrome</b>.  Other Browsers like Firefox, Safari, Opera or Internet Explorer should have no problems to run it locally.<br>
+                Locally means, that your opened the index.html from your hard drive.  
+                If you're running the theme from a Server, it will be fine.
+                </div>
+            </div>
+    </div>
+	<!-- end header -->
+    
+    
+	<!-- start html -->
+    <div id="html">
+    	<div class="row">
+        	<div class="inner">
+                <div class="title">
+                    <h3>Html</h3>
+                </div>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+            	<h4>Files</h4>
+                <p>
+                <b>You should find 11 HTML files & 1 PHP files</b><br>
+                <ol>
+                    <li>index.html</li>
+                    <li>about.html</li>
+                    <li>shortcodes.html</li>
+                    <li>pricingtable.html</li>
+                    <li>blog.html</li>
+                    <li>blog-single.html</li>
+                    <li>portfolio-2-columns.html</li>
+                    <li>portfolio-3-columns.html</li>
+                    <li>portfolio-4-columns.html</li>
+                    <li>portfolio-single.html</li>
+                    <li>contact.html</li>
+                    <li>contact_send.php</li>
+                </ol><br><br>
+                The index.html is the only file where you can load your portfolio works per ajax.<br><br>
+                </p>
+                <p>
+                	<span class="red"><b>Boxed style:</b></span> If you don't want the top-, pagtitle-, slider- and bottom-section to overlay the main section you just need to include <b>style-boxed.css</b> AND <b>mqueries-boxed.css</b> in place of the default css (style.css & mqueries.css) in the head of your files.<br><br>
+                    <b>Example:</b> <br>
+                    &lt;link href="files/css/style.css" rel="stylesheet" type="text/css" /&gt; <br><i>BECOMES</i><br>
+                    &lt;link href="files/css/style-boxed.css" rel="stylesheet" type="text/css" /&gt;
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>General classes or id's</h4>
+                <p>
+                    <b>The following classes and Id's are general names with general features</b>
+                    <ul>
+                    	<li>#sidebar  -> <i>this id is used when you use a sidebar. MUST BE in combination width .left_float or .right_float</i></li>
+                    	<li>#maincontent  -> <i>when you use a sidebar use also use this id for the main content. MUST BE in combination with .left_float or .right_float</i></li>
+                    	<li>.wrapper  -> <i>wraps the element to the main with (ex. 940px)</i></li>
+                    	<li>.wrapperoverlay  -> <i>for all alements which overlay the main wrapper</i></li>
+                    	<li>.clearfix  -> <i>use "clearfix" for all div-tags which contains any floating element (except [p])</i></li>
+                    	<li>.sidebar_section  -> <i>use this class for your different sidebar_sections</i></li>
+                    	<li>.left_float OR .right_float  -> <i>float use for any element</i></li>
+                        <li>.seperator  -> <i>adds a seperator to the top of the element. IN COMBINATION with .sectiontitle</i></li>
+                        <li>.seperator-section  -> <i>adds a seperator to the top of the element. without .sectiontitle</i></li>
+                    	<li>.color  -> <i>only for the ANCHOR tags | font will be colored</i></li>
+                    	<li>.imgoverlay  -> <i><span class="red">wrap all your img-tags which uses an anchor-tag within a div-tag with this class.  Without this wrapping the jquery does not animate</span></i></li>
+                        <li>.loadcontent  ->  <i>only for the ANCHOR tags - use this class if this is an intern link to load content by ajax</i></li>
+                    </ul><br><br>
+                    
+                    <b>The different html files has different body id's</b>
+                    <ul>
+                    	<li>#home  -> <i>for the home-page (index.html)</i></li>
+                    	<li>#blog  -> <i>for all blog content (blog.html & blog-single.html)</i></li>
+                    	<li>#portfolio  -> <i>for all portfolio content (portfolio-4-columns.html, etc & portfolio-single.html)</i></li>
+                    	<li>#content  -> <i>for all other/general types of content (about.html, shortcodes.html, etc)</i></li>
+                    </ul>
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Navigation/Menu</h4>
+                <p>
+                    <img src="files/img/menu.jpg" alt="menu" /><br />
+                    You can add, delete or change the menu to your needs. <br>
+                    The active menu point just takes a class <i>active</i><br>  
+                    For the iphone/Smartphone version javascript creates a selectbox depending on your menu.
+                </p>
+        	</div>
+        </div>
+                
+        <div class="row">
+        	<div class="inner">
+                <h4>Slider</h4>
+                <p>
+                    Add as much slides as you want.<br>
+                    <img src="files/img/slider.jpg" alt="slider" /><br />
+                    You also can add a caption to the slides.<br>
+                    <span class="red">Note:</span> The slider also is wrapped by <i>#animationsection</i>.  If you decide to work without an dynamic ajax load you can delete this wrapper.
+                </p>
+                <br><br>
+                <p>
+                	You can include the slider to your blog/portfolio posts.
+                    <img src="files/img/slider2.jpg" alt="slider2" /><br />
+                    Just change the classname to <i>slidercontent</i>
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Fancybox</h4>
+                <p>
+                    <img src="files/img/fancybox.jpg" alt="fancybox" /><br />
+                    Add the classname <i>openfancybox</i> to the anchor tags you want to open in the fancybox.<br>
+                    Of course you need to adapt the href/link to the right image.<br>
+                    If you want to connect some items to a gallery, just add a rel attribute with the same name.
+                </p>
+                
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Loadingsection</h4>
+                <p>
+                    Don't change anything about these tags<br>
+                    <img src="files/img/loadingsection.jpg" alt="loadingsection" /><br />
+                    You can delete them if you don't want to use the dynamic ajax loader.<br>
+                    <span class="red">Note:</span> In this case delete all classes <i>loadcontent</i> from the anchor tags.
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Load content</h4>
+                <p>
+                   For any anchor-tag which should load content into the #loadingsection, be sure to use the classname "loadcontent" with a 'rel' and a correct 'href' attribute<br>
+                   <span class="red">rel attribute must be unique</span><br />
+                   <img src="files/img/loadcontent.jpg" alt="loadcontent" /><br />
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Masonry (isotope)</h4>
+                <p>
+                    Create as much items as you wants, and use it the following way<br>
+                    <img src="files/img/masonry.jpg" alt="masonry" /><br />
+                    <b>Explanation</b>
+                    <ul>
+                    	<li>.masonry_item  ->  <i>this class is needed to declare a masonry_item</i></li>
+                    	<li>.portfolio-entry  ->  <i>for the css-style of the items</i></li>
+                    	<li>.motion  ->  <i>this is the name for the filter attribute</i></li>
+                    </ul>                    
+                    <br>
+                    All the masonry_items will be wrapped into a masonry ID<br>
+                    Choose here the number of columns you want to display <i>columns4</i>.
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Filter</h4>
+                <p>
+                    The filter is part of the isotope script<br>
+                    <img src="files/img/filter.jpg" alt="filter" /><br />
+                    All filter anchors needs a 'data-option-value' attribute with the correct filter name (example: .motion or .print)
+                </p>
+        	</div>
+        </div>
+                
+        <div class="row">
+        	<div class="inner">
+                <h4>Contact Form</h4>
+                <p>
+                	First of all you must enter a absolute path for the target!
+                    <img src="files/img/contact3.jpg" alt="contact" /><br />
+                    Example: http://www.yoursitename.com/contact_send.php  (No relative path)<br /><br />
+                    If you want to add new fields for the contact form, go to the contact.html
+                    <img src="files/img/contact-html.jpg" alt="contact" /><br />
+                    For each form element there is a label and the field type wrapped into a div (That's importatnt for the validation).
+                    Give a <b>class "req"</b> to the label if this is a requiered field. (the label is hidden in the css)<br />
+                    Name and Class of the input type <strong>MUST be the same</strong>.<br />
+                    <em>value</em> is the name of the field (label name).  Please take uppercase for a nice layout.<br />
+                    Onfocus & Onfocus are javascript rules.  Just change the Names (same as value).<br /><br />
+                    You will find 3 hidden fields<br />
+                    <img src="files/img/contact2.jpg" alt="contact" /><br />
+                    If you've added a new field, you need to add the name of this field into the value of name="fields".<br />
+                    Write the recepient email into the value of name="sendto" and choose a Subject name<br /><br />
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Google Map</h4>
+                <p>
+                    <img src="files/img/map.jpg" alt="map" /><br />
+                    To change the point on your google map you need to find out the <b>Latitude</b> & <b>Longitude</b>.<br>
+                    Go to this site: <a href="http://itouchmap.com/latlong.html" target="_blank">http://itouchmap.com/latlong.html</a>
+                    Type your adress or click in the map to find out your latitude and longitude.<br>
+                    Click then on the point icon to see the datas.<br>
+                    Copy them and replace the existing <i>(-33.86938,151.204834)</i> with yours.
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Audio</h4>
+                <p>
+                    <img src="files/img/audio.jpg" alt="map" /><br />
+                    Include this snippet where you want to include an audio file.<br>
+                    Just change the path to your audio file.
+                </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                <h4>Video</h4>
+                <p>
+                    <img src="files/img/video.jpg" alt="video" /><br />
+                    When you're using embedded videos from youtube or vimeo, just wrap the iframe into a <i>.embeddedvideo</i>.
+                </p>
+        	</div>
+        </div>
+            
+    </div>
+    <!-- end html -->
+    
+    <!-- start css -->
+    <div id="css">
+    	<div class="row">
+        	<div class="inner">
+                <div class="title">
+                    <h3>CSS</h3>
+                </div>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                    <p>
+                    	You should find the following css files
+                        <ol>
+                        	<li>fonts.css  ->  <i>include the colaborate font</i></li>
+                        	<li>style.css  ->  <i>contains all of the specific stylings for the page including the reset styles</i></li>
+                        	<li>isotope.css  ->  <i>contains css transformations for the isotope script</i></li>
+                        	<li>flexslider.css  ->  <i>contains css rules for the flexslider</i></li>
+                        	<li>fancybox.css  ->  <i>fancybox css</i></li>
+                        	<li>mqueries.css  ->  <i>contains the mediaqueries for being responsive</i></li>
+                        	<li>jplayer/jplayer.css  ->  <i>styling for the audio</i></li><br>
+                        	<li>style-boxed.css  ->  <i>for a boxed styling</i></li>
+                        	<li>mqueries-boxed.css  ->  <i>for a boxed styling</i></li>
+                        </ol><br>
+                        <br>
+                        <b></b><br>
+                    		<img src="files/img/mquerie_a.jpg" alt="mqueries" /><br />
+                            On the first part of the mediaqueries you'll find all rules for the tablet-devices.<br>
+                            <img src="files/img/mquerie_b.jpg" alt="mqueries" /><br />
+                            On the second part of the mediaqueries you'll find all rules for smartphones.<br><br>
+                    </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner"> 
+                    <h4>Changing Background</h4>
+                    <p>
+                    	If you want to change the background, just go to your style.css and change the image path from the body (line 97).
+                    </p>
+        	</div>
+        </div>
+        
+    </div>
+    <!-- end css -->
+    
+    <!-- start javascript -->
+    <div id="javascript">
+    	<div class="row">
+        	<div class="inner">
+                <div class="title">
+                    <h3>Javascript</h3>
+                </div>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                    <p>
+                    	The index.html includes 9 javascript files
+                        <ol>
+                        	<li>jquery-1.7.1.min.js  ->  <i>jquery library</i></li>
+                        	<li>jquery.modernizr.min.js  ->  <i>modernizr script</i></li>
+                        	<li>jquery.isotope.min.js  ->  <i>isotope script</i></li>
+                        	<li>jquery.easing.1.3.js  ->  <i>easing script</i></li>
+                        	<li>jquery.easing.compatibility.js  ->  <i>easing compatibility</i></li>
+                        	<li>jquery.fancybox.pack.js  ->  <i>fancybox</i></li>
+                        	<li>jquery.flexslider-min.js  ->  <i>flexslider</i></li>
+                        	<li>loader.js  ->  <i>contains the loader script (only included in index.html)</i></li>
+                        	<li>script.js  ->  <i>contains some general actions and initialise the plugins such as isotope, etc</i></li>
+                        	<li>jplayer/jquery.jplayer.min.js  ->  <i>jplayer</i></li>                            
+                        </ol>
+                    </p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner"> 
+                    <h4>script.js and loader.js</h4>
+                    <p>
+                    	These are the only javascript files which can be modified tou your needs.<br />
+                        You'll find the initialising of the isotope, hover-effect,...  Just set the settings to your needs.<br><br>
+                    </p>
+        	</div>
+        </div>
+                
+              
+    </div>
+    <!-- end javascript -->
+    
+     <!-- start php -->
+    <div id="php">
+    	<div class="row">
+        	<div class="inner">
+                <div class="title">
+                    <h3>PHP (contact form)</h3>
+                </div>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                    <p>
+                    	There is one php file for the contact form:<br>
+                        <b>contact_send.php</b><br>
+                        You just need to do changes if you want to change the confirmation message or to style your email.   
+                    </p>
+        	</div>
+        </div>
+        
+    
+    </div>
+    <!-- end php -->
+    
+    
+    <!-- start sources -->
+    <div id="sources">
+    	<div class="row">
+        	<div class="inner">
+                <div class="title">
+                    <h3>Sources and Credits</h3>
+                </div>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="inner">
+                    <p>
+                    	I used the following scripts, fonts:
+                        <ol>
+                        	<li><a href="http://jquery.com/">jQuery</a> from John Resig</li>
+                        	<li><a href="http://www.modernizr.com/">Modernizr</a> from Modernizr</li>
+                        	<li><a href="http://isotope.metafizzy.co/">Isotope</a> from David DeSandro</li>
+                        	<li><a href="http://gsgd.co.uk/sandbox/jquery.easIng.php">Easing</a> from George Smith</li>
+                        	<li><a href="http://flex.madebymufffin.com">Flexslider</a> from madebymufffin.com</li>
+                        	<li><a href="http://fancyapps.com/fancybox/">Fancybox</a> from Janis Skarnelis</li>
+                        	<li><a href="http://www.jplayer.org/">jPlayer</a> from Happyworm Ltd</li>
+                        	<li><a href="http://www.fontsquirrel.com/fonts/PT-Sans">PT Sans</a> from ParaType Ltd</li>
+                        </ol>  
+                    </p>
+        	</div>
+        </div>
+        
+    
+    </div>
+    <!-- end sources -->
+    
+</div>
+
+</body>
+</html>
