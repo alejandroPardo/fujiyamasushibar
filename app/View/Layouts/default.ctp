@@ -17,7 +17,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Fujiyama SushiBar & Asian Cuisine');
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,24 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('fonts');
+		echo $this->Html->css('style');
+		echo $this->Html->css('isotope');
+		echo $this->Html->css('flexslider');
+		echo $this->Html->css('fancybox');
+		echo $this->Html->css('mqueries');
+
+
+		echo $this->Html->script('jquery-1.7.1.min');
+		echo $this->Html->script('jquery.modernizr.min');
+		echo $this->Html->script('jquery.isotope.min');
+		echo $this->Html->script('jquery.flexslider-min');
+		echo $this->Html->script('jquery.easing.1.3');
+		echo $this->Html->script('jquery.easing.compatibility');
+		echo $this->Html->script('jquery.fancybox.pack');
+		echo $this->Html->script('script');
+		echo $this->Html->script('loader');
+
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -38,25 +55,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
-
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
