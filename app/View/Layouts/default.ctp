@@ -128,5 +128,6 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	        <a href="" class="totop" title="Back to top">ToTop</a>
 
 	    </div> <!-- END #page -->
+		<?php echo $this->element('sql_dump'); ?>
 	</body>
 </html>

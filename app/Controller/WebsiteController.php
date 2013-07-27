@@ -16,7 +16,7 @@ class WebsiteController extends AppController {
  *
  * @var array
  */
-
+	public $uses = array('Product', 'Photo', 'Postre');
 
 /**
  * Displays a view
@@ -80,7 +80,26 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function postres() {
-		
+		/*$postres = $this->Product->find('count', array('joins' => array(
+		    array(
+		        'table' => 'postres',
+		        'alias' => 'Postre',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Postre.product_id = Product.id')
+		    ),
+		    array(
+		        'table' => 'photos',
+		        'alias' => 'Photo',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Photo.product_id = Product.id')
+		    )
+		)));*/
+		//$postres = $this->Product->query("SELECT * FROM products LIMIT 1;");
+		//debug($this->Product->query("SELECT *, products.'name', products.description, products.price, photos.thumb, photos.photo FROM products, photos, postres WHERE products.id = photos.product_id = postres.product_id"));
+
+		//die();
 	}
 /**
  * Displays a view
