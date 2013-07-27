@@ -17,7 +17,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'Fujiyama SushiBar & Asian Cuisine');
+$cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,6 +29,7 @@ $cakeDescription = __d('cake_dev', 'Fujiyama SushiBar & Asian Cuisine');
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+		echo $this->Html->meta('viewport', null, array('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'),false);
 
 		echo $this->Html->css('fonts');
 		echo $this->Html->css('style');
@@ -54,9 +55,78 @@ $cakeDescription = __d('cake_dev', 'Fujiyama SushiBar & Asian Cuisine');
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
-</body>
+			<section id="bottom">
+	        	<div class="bottom_inner wrapperoverlay">
+	            	<div class="widget"><h6>Redes Sociales</h6>
+	                    <div class="socialmedia">
+	                        <a class="facebook" href="index.html" target="_blank"><span>Facebook</span></a>
+	                        <a class="twitter" href="index.html" target="_blank"><span>Twitter</span></a>
+	                        <a class="googleplus" href="index.html" target="_blank"><span>Google+</span></a>
+	                        <a class="linkedin" href="index.html" target="_blank"><span>Linkedin</span></a>
+	                    </div>
+	                </div>
+	            </div>
+	        </section> <!-- END #bottom -->
+	            
+	        <footer id="footer">
+	        	<div class="footer_inner wrapper clearfix">
+	            	<div class="column one_third seperator">
+	                	<div class="widget">
+	                        <h6 class="sectiontitle">Nosotros</h6>
+	                        <div id="text-widget">
+	                            <p>
+	                            Fujiyama Sushi Bar & Asian Cuisine es un restaurante especializado en comida japonesa, creado con la intención de combinar los exóticos sabores de la cocina asiática fusionados con algunas tendencias culinarias propias del mundo occidental. Nuestro objetivo principal es brindar a todos y cada uno de nuestros comensales una experiencia gastronómica única e inolvidable.
+	                            </p>
+	                            <p>
+	                            Fujiyama es la mejor opción para quien desea una experiencia gastronómica única y conocer el sabor de la comida asiática con ese toque personal que nos caracteriza, donde siempre contarán con una atención personal, amable y cálida.
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                <div class="column one_third seperator">
+	                    <div class="widget">
+	                        <h6 class="sectiontitle">Últimos Tweets</h6>
+	                        <div id="twitter-widget">
+	                            <ul class="tweet-list">
+	                                
+	                                <li><span class="tweet_time"><a href="">about 5 hours ago</a></span> <span class="tweet_text">Nullam id dolor id nibh ultricies vehicula ut id elit.</span></li>
+	                                <li><span class="tweet_time"><a href="">about 8 hours ago</a></span> <span class="tweet_text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</span></li>
+	                                <li><span class="tweet_time"><a href="">about 2 days ago</a></span> <span class="tweet_text">Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</span></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                <div class="column one_third last seperator">
+	                	<div class="widget">
+	                        <h6 class="sectiontitle">Ubicación</h6>
+	                        <div id="text-widget">
+	                            <p>
+	                            Sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non
+	                            </p>
+	                            <p>
+	                            Sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non
+	                            </p>
+	                            <p>
+	                                <a href="about.html" class="color readmore"><span class="readmoreicon">+</span>read more</a>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	        	</div>  <!-- END .footer_inner -->
+	            <div class="footer_bottom clearfix">
+	            	<div class="left_float">Copyright © 2012 by Iris. All rights reserved</div>     
+	                <div class="right_float">Created by <a href="">Spab Rice</a> for <a href="">Themeforest</a></div>
+	            </div>
+	        </footer> <!-- END #footer -->
+
+	        <a href="" class="totop" title="Back to top">ToTop</a>
+
+	    </div> <!-- END #page -->
+	</body>
 </html>

@@ -27,13 +27,23 @@ class WebsiteController extends AppController {
 	public function index() {
 	}
 
+	/**
+ * Displays a view
+ *
+ * @param mixed What page to display
+ * @return void
+ */
+	public function display() {
+			$this->redirect('index');
+	}
+
 /**
  * Displays a view
  *
  * @param mixed What page to display
  * @return void
  */
-	public function about() {
+	public function appetizers() {
 		
 	}
 /**
@@ -42,7 +52,7 @@ class WebsiteController extends AppController {
  * @param mixed What page to display
  * @return void
  */
-	public function blogSingle() {
+	public function ensaladas() {
 		
 	}
 /**
@@ -51,7 +61,25 @@ class WebsiteController extends AppController {
  * @param mixed What page to display
  * @return void
  */
-	public function blog() {
+	public function platos() {
+		
+	}
+/**
+ * Displays a view
+ *
+ * @param mixed What page to display
+ * @return void
+ */
+	public function rolls() {
+		
+	}
+/**
+ * Displays a view
+ *
+ * @param mixed What page to display
+ * @return void
+ */
+	public function postres() {
 		
 	}
 /**
@@ -61,24 +89,6 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function contact() {
-		
-	}
-/**
- * Displays a view
- *
- * @param mixed What page to display
- * @return void
- */
-	public function shortcodes() {
-		
-	}
-/**
- * Displays a view
- *
- * @param mixed What page to display
- * @return void
- */
-	public function pricingtable() {
 		
 	}
 }
