@@ -24,9 +24,9 @@
             
             <nav id="nav" class="right_float">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-           	    	<li><a href="about.html">About</a></li>
-                    <li><a href="shortcodes.html">Features</a>
+                    <li><a href="index.html">Appetizers</a></li>
+           	    	<li><a href="about.html">Ensaladas</a></li>
+                    <li><a href="shortcodes.html">Platos Calientes</a>
                   		<ul>
                             <li><a href="shortcodes.html">Shortcodes</a></li>
                             <li><a href="pricingtable.html">Pricing Table</a></li>
@@ -38,7 +38,7 @@
                             </li>
                       </ul>
                     </li>
-                    <li><a href="portfolio-4-columns.html"  class="active">Portfolio</a>
+                    <li><a href="portfolio-4-columns.html"  class="active">Sushi Rolls</a>
           				<ul>
                             <li><a href="portfolio-4-columns.html" class="active">4 Columns</a></li>
                         	<li><a href="portfolio-3-columns.html">3 Columns</a></li>
@@ -47,7 +47,7 @@
                             <li><a href="portfolio-single.html">Portfolio Single</a></li>
                       </ul>
                     </li>
-              		<li><a href="blog.html">Blog</a></li>
+              		<li><a href="blog.html">Postres</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>

@@ -16,7 +16,7 @@ class WebsiteController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+
 
 /**
  * Displays a view
@@ -25,7 +25,6 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function index() {
-		
 	}
 
 /**
