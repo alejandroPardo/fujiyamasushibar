@@ -91,12 +91,15 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	                <div class="column one_third seperator">
 	                    <div class="widget">
 	                        <h6 class="sectiontitle">Últimos Tweets</h6>
-	                        <div id="twitter-widget">
+	                        	<!--<a class="twitter-timeline" href="https://twitter.com/comefujiyama" data-widget-id="361285686965460992">Tweets by @comefujiyama</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+
+
+	                       <div id="twitter-widget">
 	                            <ul class="tweet-list">
-	                                
-	                                <li><span class="tweet_time"><a href="">about 5 hours ago</a></span> <span class="tweet_text">Nullam id dolor id nibh ultricies vehicula ut id elit.</span></li>
-	                                <li><span class="tweet_time"><a href="">about 8 hours ago</a></span> <span class="tweet_text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</span></li>
-	                                <li><span class="tweet_time"><a href="">about 2 days ago</a></span> <span class="tweet_text">Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</span></li>
+	                            	<?php foreach( $tweets as $tweet ): ?>
+                            			<li><span class="tweet_time"><a href="https://twitter.com/comefujiyama"><?php echo $tweet['created_at'];?></a></span> <span class="tweet_text"><?php echo $tweet['text'];?></span></li>
+                        			<?php endforeach; ?>
 	                            </ul>
 	                        </div>
 	                    </div>

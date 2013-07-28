@@ -18,6 +18,44 @@ class WebsiteController extends AppController {
  */
 	public $uses = array('Product', 'Photo', 'Postre', 'User');
 
+	function beforeFilter() {
+		$tw;
+		$periods = array("segundo", "minuto", "hora", "dia", "semana", "mes", "año", "decada");
+	    $lengths = array("60","60","24","7","4.35","12","10");
+		$tweets = Set::reverse($this->Twitter->OAuth->get('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=comefujiyama&count=3', array()));
+		$i=0;
+		foreach ($tweets as $tweet) {
+			if($tweet['in_reply_to_user_id_str']==null){
+				$now = time();
+		    	$unix_date = strtotime($tweet['created_at']);
+		    	
+			    if($now > $unix_date) {   
+			        $difference     = $now - $unix_date;
+			        $tense         = "Hace";
+			        
+			    }
+			    
+			    for($j = 0; $difference >= $lengths[$j] && $j < count($lengths)-1; $j++) {
+			        $difference /= $lengths[$j];
+			    }
+			    
+			    $difference = round($difference);
+			    
+			    if($difference != 1) {
+			    	if($periods[$j]=='mes'){
+			    		$periods[$j].= "e";
+			    	}
+			        $periods[$j].= "s";
+			    }
+
+				$tw[$i]['created_at'] = "{$tense} $difference $periods[$j]";
+				$tw[$i]['text'] = $tweet['text'];
+				$i++;
+			}
+		}
+		$this->set('tweets', $tw);
+	}
+
 /**
  * Displays a view
  *
@@ -26,6 +64,7 @@ class WebsiteController extends AppController {
  */
 	public function index() {
 	}
+
 
 	/**
  * Displays a view
