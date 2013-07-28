@@ -12,12 +12,11 @@
                     
                     <nav id="nav" class="right_float">
                         <ul>
-                            <li class="appetizers"><a href="appetizers">Appetizers</a></li>
-                            <li class="ensaladas"><a href="ensaladas">Ensaladas</a></li>
-                            <li class="platos"><a href="platos">Cocina</a></li>
-                            <li class="rolls"><a href="rolls">Sushi Rolls</a></li>
-                            <li class="postres"><a href="postres">Postres</a></li>
-                            <li class="contact"><a href="contact">Contact</a></li>
+                            <li class="appetizersMenu"><a href="appetizers">Appetizers</a></li>
+                            <li class="ensaladasMenu"><a href="ensaladas">Ensaladas</a></li>
+                            <li class="platosMenu"><a href="platos">Cocina</a></li>
+                            <li class="rollsMenu"><a href="rolls">Sushi Rolls</a></li>
+                            <li class="postresMenu"><a href="postres">Postres</a></li>
                         </ul>
                     </nav>
                 </div>

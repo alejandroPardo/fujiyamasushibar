@@ -16,7 +16,7 @@ class WebsiteController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Product', 'Photo', 'Postre');
+	public $uses = array('Product', 'Photo', 'Postre', 'User');
 
 /**
  * Displays a view
@@ -44,7 +44,25 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function appetizers() {
-		
+		$appetizers = $this->Product->find('all', array('joins' => array(
+		    array(
+		        'table' => 'appetizers',
+		        'alias' => 'Appetizer',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Appetizer.product_id = Product.id')
+		    ),
+		    array(
+		        'table' => 'photos',
+		        'alias' => 'Photo',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Photo.product_id = Product.id')
+		    )
+		)));
+		//debug($appetizers);
+		//die();
+		$this->set('appetizers', $appetizers);
 	}
 /**
  * Displays a view
@@ -53,7 +71,25 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function ensaladas() {
-		
+		$ensaladas = $this->Product->find('all', array('joins' => array(
+		    array(
+		        'table' => 'ensaladas',
+		        'alias' => 'Ensalada',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Ensalada.product_id = Product.id')
+		    ),
+		    array(
+		        'table' => 'photos',
+		        'alias' => 'Photo',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Photo.product_id = Product.id')
+		    )
+		)));
+		//debug($ensaladas);
+		//die();
+		$this->set('ensaladas', $ensaladas);
 	}
 /**
  * Displays a view
@@ -62,7 +98,25 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function platos() {
-		
+		$platos = $this->Product->find('all', array('joins' => array(
+		    array(
+		        'table' => 'platos',
+		        'alias' => 'Plato',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Plato.product_id = Product.id')
+		    ),
+		    array(
+		        'table' => 'photos',
+		        'alias' => 'Photo',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Photo.product_id = Product.id')
+		    )
+		)));
+		//debug($platos);
+		//die();
+		$this->set('platos', $platos);
 	}
 /**
  * Displays a view
@@ -71,7 +125,25 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function rolls() {
-		
+		$rolls = $this->Product->find('all', array('joins' => array(
+		    array(
+		        'table' => 'rolls',
+		        'alias' => 'Roll',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Roll.product_id = Product.id')
+		    ),
+		    array(
+		        'table' => 'photos',
+		        'alias' => 'Photo',
+		        'type' => 'inner',
+		        'foreignKey' => 'product_id',
+		        'conditions'=> array('Photo.product_id = Product.id')
+		    )
+		)));
+		//debug($rolls);
+		//die();
+		$this->set('rolls', $rolls);
 	}
 /**
  * Displays a view
@@ -80,7 +152,7 @@ class WebsiteController extends AppController {
  * @return void
  */
 	public function postres() {
-		/*$postres = $this->Product->find('count', array('joins' => array(
+		$postres = $this->Product->find('all', array('joins' => array(
 		    array(
 		        'table' => 'postres',
 		        'alias' => 'Postre',
@@ -95,11 +167,10 @@ class WebsiteController extends AppController {
 		        'foreignKey' => 'product_id',
 		        'conditions'=> array('Photo.product_id = Product.id')
 		    )
-		)));*/
-		//$postres = $this->Product->query("SELECT * FROM products LIMIT 1;");
-		//debug($this->Product->query("SELECT *, products.'name', products.description, products.price, photos.thumb, photos.photo FROM products, photos, postres WHERE products.id = photos.product_id = postres.product_id"));
-
+		)));
+		//debug($postres);
 		//die();
+		$this->set('postres', $postres);
 	}
 /**
  * Displays a view

@@ -12,12 +12,11 @@
                     
                     <nav id="nav" class="right_float">
                         <ul>
-                            <li class="appetizers"><a href="appetizers">Appetizers</a></li>
-                   	    	<li class="ensaladas"><a href="ensaladas">Ensaladas</a></li>
-                            <li class="platos"><a class="active" href="platos">Cocina</a></li>
-                            <li class="rolls"><a href="rolls">Sushi Rolls</a></li>
-                      		<li class="postres"><a href="postres">Postres</a></li>
-                            <li class="contact"><a href="contact">Contact</a></li>
+                            <li class="appetizersMenu"><a href="appetizers">Appetizers</a></li>
+                   	    	<li class="ensaladasMenu"><a href="ensaladas">Ensaladas</a></li>
+                            <li class="platosMenu"><a class="active" href="platos">Cocina</a></li>
+                            <li class="rollsMenu"><a href="rolls">Sushi Rolls</a></li>
+                      		<li class="postresMenu"><a href="postres">Postres</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -26,8 +25,8 @@
 
 
         <section id="pagetitle">
-        	<div class="pagetitle_inner wrapperoverlay">
-        		<h2><strong>Platos Calientes</strong><span class="tagline">La mezcla gastronómica perfecta entre Asia y occidente</h2>
+        	<div class="wrapperoverlay cocina">
+        		<h1><strong>Platos Calientes</strong><span class="tagline">La mezcla gastronómica perfecta entre Asia y occidente</h1>
             </div>
         </section>
 
@@ -41,61 +40,18 @@
                     </ul>
                     
                 	<div id="masonry" class="portfolio-entries columns4 clearfix">
-                    	<div class="masonry_item portfolio-entry post ensaladas">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
+                        <?php foreach( $platos as $plato ): ?>
+                            <div class="masonry_item portfolio-entry post">
+                                <div class="imgoverlay">
+                                    <a href="<?php echo $plato['Photo']['0']['photo'];?>" class="openfancybox" rel="gallery"><img src="<?php echo $plato['Photo']['0']['thumb'];?>" /></a>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <h5><strong><?php echo $plato['Product']['name'];?></strong></h5>
+                                    <span class="portfolio-categories">Plato Caliente</span>
+                                </div>
                             </div>
-                            <div class="portfolio-meta">
-                            	<h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Platos Calientes</span>
-                            </div>
-                      	</div>
-                        <div class="masonry_item portfolio-entry post ensaladas">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Platos Calientes</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post ensaladas">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Platos Calientes</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post ensaladas">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Platos Calientes</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post temakis">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Platos Calientes</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post temakis">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Platos Calientes</span>
-                            </div>
-                        </div>
-                    </div><!-- END #masonry -->	
+                        <?php endforeach; ?>
+                    </div><!-- END #masonry --> 
                 </article>
                        
         	</div> <!-- END #main_inner -->     

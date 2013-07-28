@@ -112,6 +112,8 @@ h1, h2, h3, h4, h5, h6 {
 .wrapperoverlay h1, .wrapperoverlay h2, .wrapperoverlay h3, .wrapperoverlay h4, .wrapperoverlay h5, .wrapperoverlay h6 {
 	color: #edf4f5;
 	}
+
+
 	
 .sectiontitle {
 	color: #999999;
@@ -128,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 45px;
 	}
 
-h1 { font-size: 42px; line-height: 49px; }
+h1 { font-size: 42px; line-height: 36px; }
 h2 { font-size: 28px; line-height: 36px; }
 h3 { font-size: 18px; line-height: 24px; }
 h4 { font-size: 14px; line-height: 19px; }
@@ -531,6 +533,47 @@ div pre:first-child {
 	max-width: 100%;
 	padding: 20px 60px;
 	background: #2a3233;
+	color: #9fa5a6;
+	}
+
+.appetizers{
+	margin: 0 auto;
+	width: 940px;
+	max-width: 100%;
+	padding: 20px 60px;
+	background: #005c9f;
+	color: #9fa5a6;
+	}
+.ensaladas{
+	margin: 0 auto;
+	width: 940px;
+	max-width: 100%;
+	padding: 20px 60px;
+	background: #089c07;
+	color: #9fa5a6;
+	}
+.cocina{
+	margin: 0 auto;
+	width: 940px;
+	max-width: 100%;
+	padding: 20px 60px;
+	background: #cc6600;
+	color: #9fa5a6;
+	}
+.rolls{
+	margin: 0 auto;
+	width: 940px;
+	max-width: 100%;
+	padding: 20px 60px;
+	background: #c0081f;
+	color: #9fa5a6;
+	}
+.postres{
+	margin: 0 auto;
+	width: 940px;
+	max-width: 100%;
+	padding: 20px 60px;
+	background: #94258A;
 	color: #9fa5a6;
 	}
 	

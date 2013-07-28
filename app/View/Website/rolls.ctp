@@ -12,12 +12,11 @@
                     
                     <nav id="nav" class="right_float">
                         <ul>
-                            <li class="appetizers"><a href="appetizers">Appetizers</a></li>
-                   	    	<li class="ensaladas"><a href="ensaladas">Ensaladas</a></li>
-                            <li class="platos"><a href="platos">Cocina</a></li>
-                            <li class="rolls"><a class="active" href="rolls">Sushi Rolls</a></li>
-                      		<li class="postres"><a href="postres">Postres</a></li>
-                            <li class="contact"><a href="contact">Contact</a></li>
+                            <li class="appetizersMenu"><a href="appetizers">Appetizers</a></li>
+                   	    	<li class="ensaladasMenu"><a href="ensaladas">Ensaladas</a></li>
+                            <li class="platosMenu"><a href="platos">Cocina</a></li>
+                            <li class="rollsMenu"><a class="active" href="rolls">Sushi Rolls</a></li>
+                      		<li class="postresMenu"><a href="postres">Postres</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -26,8 +25,8 @@
 
 
         <section id="pagetitle">
-        	<div class="pagetitle_inner wrapperoverlay">
-        		<h2><strong>Sushi Rolls</strong><span class="tagline">aqui va cualquier vaina</h2>
+        	<div class="wrapperoverlay rolls">
+        		<h1><strong>Sushi Rolls</strong><span class="tagline">aqui va cualquier vaina</h1>
             </div>
         </section>
 
@@ -39,60 +38,30 @@
                 
                 	<ul class="filter">
                         <li><a class="active" href="" data-option-value="*">Todos</a></li>
-                        <li><a href="" data-option-value=".sarroz">Sin Arroz</a></li>
-                        <li><a href="" data-option-value=".tempsarroz">Tempurizados Sin Arroz</a></li>
-                        <li><a href="" data-option-value=".temp">Tempurizados</a></li>
-                        <li><a href="" data-option-value=".tempdentro">Tempurizados Por Dentro</a></li>
-                        <li><a href="" data-option-value=".tradicionales">Tradicionales</a></li>
+                        <li><a href="" data-option-value=".SARROZ">Sin Arroz</a></li>
+                        <li><a href="" data-option-value=".TEMPSARROZ">Tempurizados Sin Arroz</a></li>
+                        <li><a href="" data-option-value=".TEMP">Tempurizados</a></li>
+                        <li><a href="" data-option-value=".TEMPDENTRO">Tempurizados Por Dentro</a></li>
+                        <li><a href="" data-option-value=".TRADICIONALES">Tradicionales</a></li>
                     </ul>
-                    
                 	<div id="masonry" class="portfolio-entries columns4 clearfix">
-                    	<div class="masonry_item portfolio-entry post sarroz">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
+                        <?php foreach( $rolls as $roll ): ?>
+                            <div class="masonry_item portfolio-entry post <?php echo $roll['Roll']['0']['type'];?>">
+                                <div class="imgoverlay">
+                                    <a href="<?php echo $roll['Photo']['0']['photo'];?>" class="openfancybox" rel="gallery"><img src="<?php echo $roll['Photo']['0']['thumb'];?>" /></a>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <h5><strong><?php echo $roll['Product']['name'];?></strong></h5>
+                                    <?php 
+                                        if($roll['Roll']['0']['type']=='SARROZ'){echo '<span class="portfolio-categories">Sin Arroz</span>';}
+                                        else if($roll['Roll']['0']['type']=='TEMPSARROZ'){echo '<span class="portfolio-categories">Tempurizado Sin Arroz</span>';}
+                                        else if($roll['Roll']['0']['type']=='TEMP'){echo '<span class="portfolio-categories">Tempurizado</span>';}
+                                        else if($roll['Roll']['0']['type']=='TEMPDENTRO'){echo '<span class="portfolio-categories">Tempurizado Por Dentro</span>';}
+                                        else if($roll['Roll']['0']['type']=='TRADICIONALES'){echo '<span class="portfolio-categories">Tradicional</span>';}?>
+                                </div>
                             </div>
-                            <div class="portfolio-meta">
-                            	<h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Sin Arroz</span>
-                            </div>
-                      	</div>
-                        <div class="masonry_item portfolio-entry post tempsarroz">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Tempurizados Sin Arroz</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post temp">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Tempurizados</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post tempdentro">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Tempurizados Por Dentro</span>
-                            </div>
-                        </div>
-                        <div class="masonry_item portfolio-entry post tradicionales">
-                            <div class="imgoverlay">
-                                <a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><img src="../img/thumb.jpg" /></a>
-                            </div>
-                            <div class="portfolio-meta">
-                                <h5><a href="../img/banana-tempura.jpg" class="openfancybox" rel="gallery"><strong>Banana Tempura</strong></a></h5>
-                                <span class="portfolio-categories">Tradicionales</span>
-                            </div>
-                        </div>
-                    </div><!-- END #masonry -->	
+                        <?php endforeach; ?>
+                    </div><!-- END #masonry --> 
                 </article>
                        
         	</div> <!-- END #main_inner -->     
