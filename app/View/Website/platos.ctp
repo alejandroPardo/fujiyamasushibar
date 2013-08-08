@@ -8,7 +8,6 @@
                     <div id="logo">
                         <a class="logotype" href="index"><img class="logo" src="../img/cabeza.png" alt="Logotype"><img class="logo" src="../img/stars.png" alt="Logotype"></a>  
                     </div>
-                    <br/>
                     <nav id="nav">
                         <ul>
                             <li class="appetizersMenu"><a href="appetizers">Appetizers</a></li>
