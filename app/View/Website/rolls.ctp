@@ -3,24 +3,23 @@
         <?php echo $this->element('topBar');?>
 
         <header id="header">
-        	<div class="header_inner wrapper">
-        	
+            <div class="header_inner wrapper">
                 <div class="header_top clearfix">
-                    <div id="logo" class="left_float">
-                        <a class="logotype" href="index"><img src="../img/logo.png" alt="Logotype"></a>
+                    <div id="logo">
+                        <a class="logotype" href="index"><img class="logo" src="../img/cabeza.png" alt="Logotype"></a>  
                     </div>
-                    
-                    <nav id="nav" class="right_float">
+                    <br/>
+                    <nav id="nav">
                         <ul>
                             <li class="appetizersMenu"><a href="appetizers">Appetizers</a></li>
-                   	    	<li class="ensaladasMenu"><a href="ensaladas">Ensaladas</a></li>
+                            <li class="ensaladasMenu"><a href="ensaladas">Ensaladas</a></li>
                             <li class="platosMenu"><a href="platos">Cocina</a></li>
-                            <li class="rollsMenu"><a class="active" href="rolls">Sushi Rolls</a></li>
-                      		<li class="postresMenu"><a href="postres">Postres</a></li>
+                            <li class="rollsMenu"><a class="rollsMenu" href="rolls">Sushi Rolls</a></li>
+                            <li class="postresMenu"><a href="postres">Postres</a></li>
                         </ul>
                     </nav>
                 </div>
-            </div>	
+            </div>  
         </header>
 
 

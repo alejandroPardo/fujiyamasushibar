@@ -544,6 +544,12 @@ div pre:first-child {
 	background: #005c9f;
 	color: #9fa5a6;
 	}
+a.appetizersMenu {
+	color: #595959; 
+	border-bottom: 3px; 
+	border-style:solid;
+	border-bottom-color: #005c9f;
+	}
 .ensaladas{
 	margin: 0 auto;
 	width: 940px;
@@ -551,6 +557,12 @@ div pre:first-child {
 	padding: 20px 60px;
 	background: #089c07;
 	color: #9fa5a6;
+	}
+a.ensaladasMenu {
+	color: #595959; 
+	border-bottom: 3px; 
+	border-style:solid;
+	border-bottom-color: #089c07;
 	}
 .cocina{
 	margin: 0 auto;
@@ -560,6 +572,12 @@ div pre:first-child {
 	background: #cc6600;
 	color: #9fa5a6;
 	}
+a.platosMenu {
+	color: #595959; 
+	border-bottom: 3px; 
+	border-style:solid;
+	border-bottom-color: #cc6600;
+	}
 .rolls{
 	margin: 0 auto;
 	width: 940px;
@@ -568,6 +586,12 @@ div pre:first-child {
 	background: #c0081f;
 	color: #9fa5a6;
 	}
+a.rollsMenu {
+	color: #595959; 
+	border-bottom: 3px; 
+	border-style:solid;
+	border-bottom-color: #c0081f;
+	}
 .postres{
 	margin: 0 auto;
 	width: 940px;
@@ -575,6 +599,12 @@ div pre:first-child {
 	padding: 20px 60px;
 	background: #94258A;
 	color: #9fa5a6;
+	}
+a.postresMenu {
+	color: #595959; 
+	border-bottom: 3px; 
+	border-style:solid;
+	border-bottom-color: #94258A;
 	}
 	
 .main_inner {
@@ -633,7 +663,7 @@ header .header_inner {
 	margin:  0 0 5px 0;
 	}
 	
-	
+.logo      { width: 100%; max-width: 500px; margin-right: auto; margin-left: auto; }
 
 /*---------------------------------------------- 
 4. Top
@@ -676,6 +706,10 @@ header .header_inner {
 ------------------------------------------------*/
 nav {
 	z-index: 15;
+	width: 100%;
+	max-width: 540px; /* Original width of the logo image */ 
+	margin-left: auto;
+	margin-right: auto;
 	}
 	
 nav ul li {
@@ -695,7 +729,7 @@ nav ul li a  {
 	}
 	
 nav ul li a:hover, nav ul li a.active {
-	color: #595959; text-decoration: none;
+	color: #595959; text-decoration: none; 
 	}
 
 nav ul li ul {

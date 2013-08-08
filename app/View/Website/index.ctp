@@ -6,11 +6,11 @@
         <header id="header">
         	<div class="header_inner wrapper">
                 <div class="header_top clearfix">
-                    <div id="logo" class="left_float">
-                        <a class="logotype" href="index"><img src="../img/logo.png" alt="Logotype"></a>  
+                    <div id="logo">
+                        <a class="logotype" href="index"><img class="logo" src="../img/cabeza.png" alt="Logotype"></a>  
                     </div>
-                    
-                    <nav id="nav" class="right_float">
+                    <br/>
+                    <nav id="nav">
                         <ul>
                             <li class="appetizersMenu"><a href="appetizers">Appetizers</a></li>
                             <li class="ensaladasMenu"><a href="ensaladas">Ensaladas</a></li>
@@ -20,10 +20,10 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header_tagline seperator-section">
+               <!-- <div class="header_tagline seperator-section">
                     <h1><strong>¡Bienvenido a Fujiyama!</strong></h1>
                     <h3>A Clean &amp; Minimal Portfolio/Blog Theme for the professional Creative.</h3>
-                </div>
+                </div>-->
             </div>	
         </header>
         <div id="animationsection" class="clearfix">
