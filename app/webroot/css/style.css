@@ -94,7 +94,7 @@ html {
 
 body {
 	font-family: 'PTSansRegular', Helvetica, Arial, sans-serif; font-size:12px; color:#999999; text-align: left; line-height:18px;
-	background: transparent url(../img/background.png);
+	background: transparent url(../img/background_wood2.png);
 	}
 ::selection { background:#2db6cf; color:#fff; }
 ::-moz-selection { background:#2db6cf; color:#fff; }
