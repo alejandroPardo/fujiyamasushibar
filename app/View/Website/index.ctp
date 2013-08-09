@@ -7,7 +7,7 @@
         	<div class="header_inner wrapper">
                 <div class="header_top clearfix">
                     <div id="logo">
-                        <a class="logotype" href="index"><img class="logo" src="../img/cabeza.png" alt="Logotype"><img class="logo" src="../img/stars.png" alt="Logotype"></a>  
+                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype"><img class="stars" src="../img/stars.png" alt="Logotype"></a>  
                     </div>
                     <nav id="nav">
                         <ul>
@@ -19,10 +19,6 @@
                         </ul>
                     </nav>
                 </div>
-               <!-- <div class="header_tagline seperator-section">
-                    <h1><strong>¡Bienvenido a Fujiyama!</strong></h1>
-                    <h3>A Clean &amp; Minimal Portfolio/Blog Theme for the professional Creative.</h3>
-                </div>-->
             </div>	
         </header>
         <div id="animationsection" class="clearfix">

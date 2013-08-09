@@ -55,7 +55,6 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 		echo $this->fetch('script');
 	?>
 </head>
-
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
@@ -108,16 +107,24 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	                <div class="column one_third last seperator">
 	                	<div class="widget">
 	                        <h6 class="sectiontitle">Ubicación</h6>
-	                        <div id="text-widget">
-	                            <p>
-	                            Sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non
-	                            </p>
-	                            <p>
-	                            Sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non
-	                            </p>
-	                            <p>
-	                                <a href="about.html" class="color readmore"><span class="readmoreicon">+</span>read more</a>
-	                            </p>
+	                        <div id="twitter-widget">
+	                        	<ul class="location-list">
+                            		<li>
+                            			<p>
+                            			<a href="../img/map-VA.png" class="openfancybox" rel="gallery">
+			                            Calle 2 de la Urbanización Vista Alegre<br>
+			                            Edificio Mago, PB, Local 4, Caracas, Venezuela<br>
+			                            Teléfonos: (0212)471-1759 // (0212)471-6261
+			                            </a>
+			                            </p>
+                            		</li>
+                            		<li>
+                            			<p>
+			                            Calle 2 de Vista Alegre, Edificio Mago, PB, Local 4, Caracas, Venezuela
+			                            Teléfonos: (0212)471-1759 // (0212)471-6261
+			                            </p>
+                            		</li>
+	                            </ul>
 	                        </div>
 	                    </div>
 	                </div>
@@ -131,6 +138,5 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	        <a href="" class="totop" title="Back to top">ToTop</a>
 
 	    </div> <!-- END #page -->
-		<?php echo $this->element('sql_dump'); ?>
 	</body>
 </html>
