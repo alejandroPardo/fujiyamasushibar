@@ -111,11 +111,11 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	                        	<ul class="location-list">
                             		<li>
                             			<p>
-                            			<a href="../img/map-VA.png" class="openfancybox" rel="gallery">
-			                            Calle 2 de la Urbanización Vista Alegre<br>
-			                            Edificio Mago, PB, Local 4, Caracas, Venezuela<br>
-			                            Teléfonos: (0212)471-1759 // (0212)471-6261
-			                            </a>
+	                            			<a href="../img/map-VA.png" class="openfancybox" rel="gallery">
+					                            Calle 2 de la Urbanización Vista Alegre<br>
+					                            Edificio Mago, PB, Local 4, Caracas, Venezuela<br>
+					                            Teléfonos: (0212)471-1759 // (0212)471-6261
+				                            </a>
 			                            </p>
                             		</li>
                             		<li>
