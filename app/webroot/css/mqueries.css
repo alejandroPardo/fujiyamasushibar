@@ -139,7 +139,7 @@ textarea { width: 217px;  }
 /*---------------------------------------------- 
 General ID's or Classes
 ------------------------------------------------*/
-.wrapper { width: 240px; padding: 40px 20px 0px 20px; }
+.wrapper { width: 240px; padding: 1px 20px 0px 20px; }
 .wrapperoverlay {width: 260px; padding: 20px 20px;}
 #sidebar { width: 240px; }
 #maincontent { width: 240px; }
