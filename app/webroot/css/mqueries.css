@@ -148,7 +148,8 @@ General ID's or Classes
 /*---------------------------------------------- 
 Top
 ------------------------------------------------*/
-#top .showhidetop { right: 30px; }
+#top {display: none;}
+#top .showhidetop { display: none; right: 30px; }
 
 /*---------------------------------------------- 
 Logo

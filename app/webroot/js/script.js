@@ -110,14 +110,14 @@ $(document).ready(function() {
 	
 	
 	/*---------------------------------------------- 
-				R E S P ON S I V E   N A V 
+				R E S P O N S I V E   N A V 
 	------------------------------------------------*/
 	$("<select />").appendTo("nav");
 	
 	$("<option />", {
 	   "selected": "selected",
 	   "value"   : "",
-	   "text"    : "Go to..."
+	   "text"    : "Menú..."
 	}).appendTo("nav select");
 	
 	// Populate dropdown with menu items

@@ -1,12 +1,13 @@
 <body id="portfolio">
     <div id="page">
-        <?php echo $this->element('topBar');?>
+        <?php //echo $this->element('topBar');?>
 
         <header id="header">
             <div class="header_inner wrapper">
                 <div class="header_top clearfix">
                     <div id="logo">
-                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype"><img class="stars" src="../img/stars.png" alt="Logotype"></a>  
+                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype">
+                        <!--<img class="stars" src="../img/stars.png" alt="Logotype"></a>-->
                     </div>
                     <nav id="nav">
                         <ul>
@@ -24,7 +25,7 @@
 
         <section id="pagetitle">
         	<div class="wrapperoverlay ensaladas">
-        		<h1><strong>Ensaladas</strong><span class="tagline">Disfruta de nuestros sabores con pocas calorías</h1>
+        		<h1><strong>Ensaladas</strong></h1>
             </div>
         </section>
 
@@ -37,8 +38,10 @@
                 	<ul class="filter">
                         <li><a class="active" href="" data-option-value="*">Todos</a></li>
                         <li><a href="" data-option-value=".ENSALADA">Ensaladas</a></li>
-                        <li><a href="" data-option-value=".TEMAKI">Temakis</a></li>
-                        <li><a href="" data-option-value=".NIGIRI">Nigiris</a></li>
+                        <li><a href="" data-option-value=".TEMAKI">Temaki</a></li>
+                        <li><a href="" data-option-value=".NIGIRI">Nigiri</a></li>
+                        <li><a href="" data-option-value=".SASHIMI">Sashimi</a></li>
+                        <li><a href="" data-option-value=".HOSOMAKI">Hosomaki</a></li>
                     </ul>
                     
                 	<div id="masonry" class="portfolio-entries columns4 clearfix">
@@ -52,7 +55,9 @@
                                     <?php 
                                         if($ensalada['Ensalada']['0']['type']=='ENSALADA'){echo '<span class="portfolio-categories">Ensalada</span>';}
                                         else if($ensalada['Ensalada']['0']['type']=='TEMAKI'){echo '<span class="portfolio-categories">Temaki</span>';}
-                                        else if($ensalada['Ensalada']['0']['type']=='NIGIRI'){echo '<span class="portfolio-categories">Nigiri</span>';}?>
+                                        else if($ensalada['Ensalada']['0']['type']=='NIGIRI'){echo '<span class="portfolio-categories">Nigiri</span>';}
+                                        else if($ensalada['Ensalada']['0']['type']=='SASHIMI'){echo '<span class="portfolio-categories">Sashimi</span>';}
+                                        else if($ensalada['Ensalada']['0']['type']=='HOSOMAKI'){echo '<span class="portfolio-categories">Hosomaki</span>';}?>
                                 </div>
                             </div>
                         <?php endforeach; ?>

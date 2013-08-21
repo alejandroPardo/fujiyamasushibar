@@ -1,12 +1,13 @@
 <body id="portfolio">
     <div id="page">
-        <?php echo $this->element('topBar');?>
+        <?php //echo $this->element('topBar');?>
 
         <header id="header">
             <div class="header_inner wrapper">
                 <div class="header_top clearfix">
                     <div id="logo">
-                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype"><img class="stars" src="../img/stars.png" alt="Logotype"></a>  
+                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype">
+                        <!--<img class="stars" src="../img/stars.png" alt="Logotype"></a>-->
                     </div>
                     <nav id="nav">
                         <ul>
@@ -24,7 +25,7 @@
 
         <section id="pagetitle">
         	<div class="wrapperoverlay rolls">
-        		<h1><strong>Sushi Rolls</strong><span class="tagline">aqui va cualquier vaina</h1>
+        		<h1><strong>Sushi Rolls</strong></h1>
             </div>
         </section>
 

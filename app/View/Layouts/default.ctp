@@ -62,10 +62,10 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	        	<div class="bottom_inner wrapperoverlay">
 	            	<div class="widget"><h6>Redes Sociales</h6>
 	                    <div class="socialmedia">
-	                        <a class="facebook" href="index.html" target="_blank"><span>Facebook</span></a>
-	                        <a class="twitter" href="index.html" target="_blank"><span>Twitter</span></a>
-	                        <a class="googleplus" href="index.html" target="_blank"><span>Google+</span></a>
-	                        <a class="linkedin" href="index.html" target="_blank"><span>Linkedin</span></a>
+	                        <a class="facebook" href="https://www.facebook.com/fujiyama.ve" target="_blank"><span>Facebook</span></a>
+	                        <a class="twitter" href="https://twitter.com/comefujiyama" target="_blank"><span>Twitter</span></a>
+	                        <a class="googleplus" href="#" target="_blank"><span>Google+</span></a>
+	                        <a class="linkedin" href="#" target="_blank"><span>Linkedin</span></a>
 	                    </div>
 	                </div>
 	            </div>
@@ -90,11 +90,7 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	                <div class="column one_third seperator">
 	                    <div class="widget">
 	                        <h6 class="sectiontitle">Últimos Tweets</h6>
-	                        	<!--<a class="twitter-timeline" href="https://twitter.com/comefujiyama" data-widget-id="361285686965460992">Tweets by @comefujiyama</a>
-								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
-
-
-	                       <div id="twitter-widget">
+	                       	<div id="twitter-widget">
 	                            <ul class="tweet-list">
 	                            	<?php foreach( $tweets as $tweet ): ?>
                             			<li><span class="tweet_time"><a href="https://twitter.com/comefujiyama"><?php echo $tweet['created_at'];?></a></span> <span class="tweet_text"><?php echo $tweet['text'];?></span></li>
@@ -111,7 +107,7 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	                        	<ul class="location-list">
                             		<li>
                             			<p>
-	                            			<a href="../img/map-VA.png" class="openfancybox" rel="gallery">
+	                            			<a href="../img/map-VA.jpg" class="openfancybox" rel="mapva">
 					                            Calle 2 de la Urbanización Vista Alegre<br>
 					                            Edificio Mago, PB, Local 4, Caracas, Venezuela<br>
 					                            Teléfonos: (0212)471-1759 // (0212)471-6261
@@ -120,8 +116,13 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
                             		</li>
                             		<li>
                             			<p>
-			                            Calle 2 de Vista Alegre, Edificio Mago, PB, Local 4, Caracas, Venezuela
-			                            Teléfonos: (0212)471-1759 // (0212)471-6261
+                            				<a href="../img/map-C.jpg" class="openfancybox" rel="mapc">
+					                            Avenida Sur Uno, entre Esquina Madrices<br>
+					                            a San Jacinto, Centro Comercial<br>
+					                            Galerias Edsan. Mezzanina<br>
+					                            Local MZZ-10, Caracas, Venezuela<br>
+					                            Teléfonos: (0212)564-2029 // (0212)564-6261
+				                            </a>
 			                            </p>
                             		</li>
 	                            </ul>
@@ -130,8 +131,8 @@ $cakeDescription = __d('fujiyama', 'Fujiyama SushiBar & Asian Cuisine');
 	                </div>
 	        	</div>  <!-- END .footer_inner -->
 	            <div class="footer_bottom clearfix">
-	            	<div class="left_float">Copyright © 2012 by Iris. All rights reserved</div>     
-	                <div class="right_float">Created by <a href="">Spab Rice</a> for <a href="">Themeforest</a></div>
+	            	<div class="left_float">Todos los derechos reservados © 2013.</div>     
+	                <div class="right_float">Diseño y desarrollo web por <a href="http://www.theeinsteincrew.com" target="_blank">TheEinsteinCrew*</a>
 	            </div>
 	        </footer> <!-- END #footer -->
 
