@@ -6,7 +6,7 @@
         	<div class="header_inner wrapper">
                 <div class="header_top clearfix">
                     <div id="logo">
-                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype">
+                        <a class="logotype" href="index"><img class="logo" src="../img/brush.png" alt="Logotype"></a>
                         <!--<img class="stars" src="../img/stars.png" alt="Logotype"></a>-->
                     </div>
                     <nav id="nav">
