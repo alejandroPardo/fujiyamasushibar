@@ -235,4 +235,17 @@ class WebsiteController extends AppController {
 	public function contact() {
 		
 	}
+
+	public function database(){
+		$photos = $this->Photo->find('all');
+		foreach ($photos as $photo) {
+			$thumb = substr($photo['Photo']['thumb'],3);
+			$photoFull = substr($photo['Photo']['photo'],3);
+			$id = $photo['Photo']['id'];
+			$data = array('id' => $id, 'thumb' => $thumb, 'photo' => $photoFull);
+			$this->Photo->save($data);
+		}
+		debug("done!");
+		die();
+	}
 }
