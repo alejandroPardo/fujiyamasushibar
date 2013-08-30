@@ -44,6 +44,7 @@
                 	<div id="masonry" class="portfolio-entries columns4 clearfix">
                         <?php foreach( $appetizers as $appetizer ): ?>
                             <div class="masonry_item portfolio-entry post <?php echo $appetizer['Appetizer']['0']['type'];?>">
+                                <span class="checkout-price">Bs.200,00</span>
                                 <div class="imgoverlay">
                                     <a href="<?php echo $appetizer['Photo']['0']['photo'];?>" class="openfancybox" rel="gallery"><img src="<?php echo $appetizer['Photo']['0']['thumb'];?>" /></a>
                                 </div>
